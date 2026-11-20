@@ -11,100 +11,57 @@ To create a 3Dmodel from the given isometric drawing using fusion 360 tool.
 3. 16 GB of RAM (integrated graphics recommend 1 GB or more)
 4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
 
-## STEP-2:  Select the Sketch Plane
- Select the TOP (XY) Plane
+## PROCEDURE: 
+1. Open Autodesk Fusion and create a new design. Select Create Sketch from the Sketch section and choose the top plane as the sketching plane.
+2. After entering the sketch environment, select the Line tool from the Sketch toolbar. Draw the initial horizontal and vertical reference lines according to the given drawing and apply the required dimensions using the Sketch Dimension tool.
+3. Using the slot constraing in create, draw a slot of 56mm x 36mm dimensions using center to center slot.
 
-## STEP-3: Create a Sketch 
-1.  Select Sketch > Rectangle > Center Rectangle.
-2.  Now hover over the origin (center) of the sketch. You should see the cursor snap to this location.
-3.  Click once to begin placing the rectangle.
-4.  Type the Tab button and enter the values 56 mm and 18mm for the width and height respectively.
-5.  Select Sketch > Arc > Center point arc.
-6.  Click again to place the value (Both end of the sketch). You should see the cursor snap to this location
-7.  Type the Tab button and enter the values R 18mm
-8.  Select Sketch > circle > Center point circle.
-9.  Click again to place the value (Both side of the sketch). You should see the cursor snap to this location
-10. Type the Tab button and enter the values dia 16mm
-11. Click again to place the sketch.
-12. Click Finish Sketch after completing.
+<img width="471" height="540" alt="slot" src="https://github.com/user-attachments/assets/98c6c155-fe5a-452b-be6b-f70354ea231f" />
 
-## STEP-4: Extrude Sketch in XY Plane
-1.	Select Extrude.
-2.	Select the sketch.
-3.	Click again to place the value.
-4.	Type in the value of 8mm. 
-5.	Press ENTER to accept the value.
+4. Now, select one of the centers and draw a circle of Ø16mm using the circle constraint.
 
-## STEP-5:  Start the sketch command
-   Select Sketch > Create Sketch.
+<img width="536" height="443" alt="circlr" src="https://github.com/user-attachments/assets/df3b6611-6aeb-4b2c-95df-c1fe3db90d65" />
 
-## STEP-6: Select the Sketch Plane
-	Select the TOP SURFACE of the 3D block 
-  
-## STEP-7: Create a RECTANGLE 
-1.	Select Sketch > RECTANGLE  > CENTER RECTANGLE.
-2.	Now hover over the origin (center) of the sketch. You should see the cursor snap to this location.
-3.	Click once to begin placing the RECTANGLE.
-4.	Type the Tab button and enter the values 40mm and 10mm for the width and height respectively
-5.	Click again to place the RECTANGLE.
-6.	Click Finish Sketch after completing.
+5. After drawing the circle, use the mirror constraint to mirror the circle onto the other side on the slot.
 
-## STEP-8:  Extrude RECTANGLE 
-1.	Select Extrude.
-2.	Select the Rectangle sketch.
-3.	Click again to place the value.
-4.	Type in the value of 32mm. 
-5.	Press ENTER to accept the value.
+<img width="270" height="432" alt="mirror" src="https://github.com/user-attachments/assets/643d086f-2b42-4903-b528-f9b80e6bd1bf" />
+<img width="311" height="160" alt="mirror2" src="https://github.com/user-attachments/assets/6a93faa9-4df6-4e45-a2e4-106e8c391fae" />
 
-## STEP-9: Create a TRIANGLE 
-1.	Select Sketch > TRIANGLE > CENTER TRIANGLE .
-2.	Now hover over the origin (center) of the sketch. You should see the cursor snap to this location.
-3.	Click once to begin placing the TRIANGLE.
-4.	Type the Tab button and enter the values 32mm and 12mm for the width and height respectively
-5.	Click again to place the TRIANGLE.
-6.	Click Finish Sketch after completing.
+6. Now, give finish sketch and exit the sketching environment. After exiting now go to extrude constraint and select everything except the two circle. Now extrude the selected sketch to 8mm.
 
-## STEP-10:  Extrude TRIANGLE
-1.	Select Extrude.
-2.	Select the TRIANGLE sketch.
-3.	Click again to place the value.
-4.	Type in the value of 6mm in both direction option. 
-5.	Press ENTER to accept the value.
+<img width="653" height="773" alt="extrude" src="https://github.com/user-attachments/assets/850a1489-02f9-466d-81fb-cfe67303191b" />
 
-## STEP-11: Create a PENTAGON 
-1.	Select Sketch > polygon > circumscribed polygon.
-2.	Now hover over the origin (center) of the sketch. You should see the cursor snap to this location.
-3.	Click once to begin placing the polygon.
-4.	Type the Tab button and enter the values 40mm and 30mm, for the width and height respectively and Choose 3 Side
-5.	Click again to place the polygon.
-6.	Click Finish Sketch after completing.
+7. Now, enter the sketching environment again and choose the top view. Using mid-point line constraint draw a line of 40mm on the edge on the slot we created previously. Draw two parallel 10mm line on each of the 40mm line and connect them on the other side.
 
-## STEP-12: Extrude PENTAGON
-1.	Select Extrude.
-2.	Select the PENTAGON sketch.
-3.	Click again to place the value.
-4.	Type in the value of 10mm. 
-5.	Press ENTER to accept the value.
+<img width="697" height="540" alt="midpoint line" src="https://github.com/user-attachments/assets/bcaa2c08-066c-4ffb-b01c-8e2dae0839f4" />
 
-## STEP-13: Create a CIRCLE 
-1.	Select Sketch > CIRCLE > CENTER CIRCLE.
-2.	Now hover over the origin (Pentagan end side) of the sketch. You should see the cursor snap to this location.
-3.	Click once to begin placing the CIRCLE.
-4.	Type the Tab button and enter the value DIA 30mm and 20mm, inner and outer diameter respectively .
-5.	Click again to place the circle.
-6.	Click Finish Sketch after completing.
+8. Now, click finish sketch and exit the sketching environment. Go to extrude constraint and select the rectangle we just drew and extrude it by 32mm.
+9. Enter the sketching environment again and draw a 12mm line on the other edge of the base, using the mid-point line constraint. Draw two perpendicular lines on each ends of the 12mm line, connecting the 12mm line and 40mm line on the other side.
+10. Exit the sketching environment again and select the rectangle we just drew and extrude it by 32mm.
+11. Now use the chamfer constraint on the rectangle with 12mm edge and drag it down until both edges of the base and the rectangle of 40mmx10mm meet. Select chamfer type into two distance.
 
-## STEP-14:  Extrude CIRCLE 
-1.	Select Extrude.
-2.	Select the pentogan sketch.
-3.	Click again to place the value.
-4.	Type in the value of 10mm on both side. 
-5.	Press ENTER to accept the value.
+<img width="667" height="693" alt="chamfer1" src="https://github.com/user-attachments/assets/7a66c8df-23af-426f-8894-17d2590d3c8c" />
+<img width="502" height="435" alt="two distance chamfer" src="https://github.com/user-attachments/assets/fcffa4e2-739e-4362-a9ca-a94b5c499a7e" />
 
-## INPUT:
-![image](https://user-images.githubusercontent.com/113594316/198523331-05ace360-502b-4569-b9b4-31c60e3cd554.png)
+12. Again enter the sketching environment, draw two concentric circles of each Ø30mm and Ø20mm. The circles should be 32mm away from 40mm edge. 
+13. Now, use the line constraint and draw a line connecting the ends of the 40mm line to the circle. Use the tangent constraint to connect the circle and the line.
 
-Output:
+<img width="242" height="381" alt="tangent" src="https://github.com/user-attachments/assets/487b3968-0d36-482d-a9dc-8c6467c72adf" />
+
+14. Now, trim the extra length of the line.
+
+<img width="208" height="261" alt="trim" src="https://github.com/user-attachments/assets/6febfd9b-ad1c-4cfb-a437-176de9c2801e" />
+
+15. fter trimming, mirror that line to the other side of the circle. Click finish sketch and exit the sketching environment.
+16. Select the entire sketch and extrude it to 10mm. Now select only the ring formed by the concentric circles and extrude by another 10mm.
+17. Now, save the design and go to file and click new, then drawing and select manual.
+18. Once you go the drawing file, select front view for base view and place it on the blank page. Repeat this step for top view, side view and isometric view.
+19. After these views are place enter the required measurements on the drawing. And save the file once this step is done.
+## OUTPUT:
+
+<img width="975" height="687" alt="2 2 drawing" src="https://github.com/user-attachments/assets/6f082995-97d1-47e0-8816-5c19ed702e86" />
+<img width="572" height="611" alt="exp2 2" src="https://github.com/user-attachments/assets/647307f4-3878-466b-a540-6a994653bdf1" />
+
 
 ## RESULT: 
 Thus, the 3D model is created from given isometric drawing.
